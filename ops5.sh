@@ -17,14 +17,13 @@
 #done 
  
 # Ask the user for a PID
-echo -e "\nEnter the PID of the process to kill (or press Ctrl + C to exit): " $pid
-read $pid
+echo -e "\nEnter the PID of the process to kill (or press Ctrl + C to exit): "
+read pid
+
 # Use the $pid variable for further actions
 
 
-echo "You entered PID: $pid"
-kill 
-read option
+kill $pid
 done
 # Declaration of array
 #names=(a b c d e)
