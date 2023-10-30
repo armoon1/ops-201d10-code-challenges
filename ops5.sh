@@ -23,8 +23,18 @@ count=4
 #done 
 
 #echo "The condition no longer true."
+# Running process
+ echo "Running process"
+ ps aux
+# Running process
+#while true; do 
+#    ps aux
+#    read -p "ctrl+c  to exit"
+#done 
 
-while true; do 
-    ps aux
-    read -p "ctrl+c  to exit"
-done 
+ 
+# Ask the user for a PID
+read -p "Enter a PID to interact with: " $pid
+
+# Use the $pid variable for further actions
+echo "You entered PID: $pid"
