@@ -5,10 +5,30 @@
 # Date of latest revision:      10/29/2023
 # Purpose:                      Running process
 
+ while true; do   
+ #echo "The condition no longer true."
+# Running process
+ echo "Running process"
+ ps aux
+# Running process
+#while true; do 
+#    ps aux
+#    read -p "ctrl+c  to exit"
+#done 
+ 
+# Ask the user for a PID
+echo -e "\nEnter the PID of the process to kill (or press Ctrl + C to exit): " $pid
+read $pid
+# Use the $pid variable for further actions
 
+
+echo "You entered PID: $pid"
+kill 
+read option
+done
 # Declaration of array
-names=(a b c d e)
-count=4
+#names=(a b c d e)
+#count=4
 #For loop 
 #for names in ${names[*]}
 #do 
@@ -21,20 +41,3 @@ count=4
 #    echo "Value of count is: $count"
 #    count=$(($count -1))
 #done 
-
-#echo "The condition no longer true."
-# Running process
- echo "Running process"
- ps aux
-# Running process
-#while true; do 
-#    ps aux
-#    read -p "ctrl+c  to exit"
-#done 
-
- 
-# Ask the user for a PID
-read -p "Enter a PID to interact with: " $pid
-
-# Use the $pid variable for further actions
-echo "You entered PID: $pid"
