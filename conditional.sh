@@ -5,37 +5,20 @@
 # Date of latest revision:      10/30/2023
 # Purpose:                      Conditionals
 
-while true; do   
- #echo "The condition no longer true."
-# Running process
- echo "Running process"
- ps aux
-# Running process
-#while true; do 
-#    ps aux
-#    read -p "ctrl+c  to exit"
-#done 
- 
-# Ask the user for a PID
-echo -e "\nEnter the PID of the process to kill (or press Ctrl + C to exit): "
-read pid
+shopping_list=(coke pepsi fanta water)
 
-# Use the $pid variable for further actions
+shopping_list_checker(){
 
-kill $pid
-done
-# Declaration of array
-#names=(a b c d e)
-#count=4
-#For loop 
-#for names in ${names[*]}
-#do 
-#    echo $names
-#done 
-#while loop
+    search_item="$1"
+
+    for item in "${shopping_list[@]}"; do 
+        echo $item 
+
+        if [ "$item" == "$search_item" ]; then
+        return 0
+        fi 
+    done
+    return 1
 
 
-#while [ $count -gt 0 ]; do 
-#    echo "Value of count is: $count"
-#    count=$(($count -1))
-#done 
+}
