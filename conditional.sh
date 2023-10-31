@@ -17,16 +17,13 @@ names=("Bob" "Jack" "Sara")
 #for loop
     for name in "${names[@]}"; do
     # Check if the name exists
-    if [ -e "name" ]; then
+    if [ -f "name" ]; then
         echo "$name exists."
     else
         # Create the name
         if [ -f "$name" ]; then
             touch "$name"
             echo "Created file: $name"
-        elif [ -d "$name" ]; then
-            mkdir "$name"
-            echo "Created directory: $name"
         else
             echo "Unknown type: $name"
         fi
