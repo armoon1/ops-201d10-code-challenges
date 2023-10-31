@@ -8,11 +8,13 @@
 #### STILL WORKING ON IT #######
 #### STILL WORKING ON IT #######
 #### STILL WORKING ON IT #######
+#Create a script that detects if a file or directory exists, then creates it if it does not exist.
+#Your script must use at least one array, one loop, and one conditional.
+#name list in an array
+names=("Bob" "Jack" "Sara")
 
-names=(Bob Jack Sara )
 
-shopping_checker(){
-
+#for loop
     for name in "${names[@]}"; do
     # Check if the file or directory exists
     if [ -e "name" ]; then
@@ -31,5 +33,3 @@ shopping_checker(){
     fi
 done
 
-}
-shopping_checker 
