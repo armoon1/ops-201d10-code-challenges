@@ -22,7 +22,6 @@ read pid
 
 # Use the $pid variable for further actions
 
-
 kill $pid
 done
 # Declaration of array

@@ -8,11 +8,14 @@
 Apple_price=5
 files=`ls`
 Code_writer=`whoami`
+A=1
+B=2
 # Declaration of functions
 print_login(){
     last 
     echo "This is login history"
 }
+
 # Main
 # Calling the function
 
