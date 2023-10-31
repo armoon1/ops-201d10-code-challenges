@@ -5,20 +5,27 @@
 # Date of latest revision:      10/30/2023
 # Purpose:                      Conditionals
 
-shopping_list=(coke pepsi fanta water)
+names=(Bob Jack Sara )
 
-shopping_list_checker(){
+shopping_checker(){
 
-    search_item="$1"
-
-    for item in "${shopping_list[@]}"; do 
-        echo $item 
-
-        if [ "$item" == "$search_item" ]; then
-        return 0
-        fi 
-    done
-    return 1
-
+    for name in "${names[@]}"; do
+    # Check if the file or directory exists
+    if [ -e "name" ]; then
+        echo "$name exists."
+    else
+        # Create the file or directory
+        if [ -f "$name" ]; then
+            touch "$name"
+            echo "Created file: $name"
+        elif [ -d "$name" ]; then
+            mkdir "$name"
+            echo "Created directory: $name"
+        else
+            echo "Unknown type: $name"
+        fi
+    fi
+done
 
 }
+shopping_checker 
