@@ -5,6 +5,10 @@
 # Date of latest revision:      10/30/2023
 # Purpose:                      Conditionals
 
+#### STILL WORKING ON IT #######
+#### STILL WORKING ON IT #######
+#### STILL WORKING ON IT #######
+
 names=(Bob Jack Sara )
 
 shopping_checker(){
