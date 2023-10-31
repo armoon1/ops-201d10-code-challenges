@@ -16,11 +16,11 @@ names=("Bob" "Jack" "Sara")
 
 #for loop
     for name in "${names[@]}"; do
-    # Check if the file or directory exists
+    # Check if the name exists
     if [ -e "name" ]; then
         echo "$name exists."
     else
-        # Create the file or directory
+        # Create the name
         if [ -f "$name" ]; then
             touch "$name"
             echo "Created file: $name"
