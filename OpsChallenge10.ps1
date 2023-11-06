@@ -5,7 +5,7 @@ Get-Process | Sort-Object -Property CPU -Descending
 
 # Print to the terminal screen all active processes ordered by highest Process Identification Number at the top.
  
- Get-Process | Sort-Object -Property Id -Descending
+ Get-Process | Sort-Object -Property Id -Descending | Select-Object -First 5
 
  # Print to the terminal screen the top five active processes ordered by highest Working Set (WS(K)) at the top.
 
