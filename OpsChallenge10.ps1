@@ -18,7 +18,7 @@ Start-Process "C:\Program Files\Google\Chrome\Application"
 # Start the process Notepad ten times using a for loop.
 
 for ($i = 1; $i -le 10; $i++) {
-    Start-Process ".\\notepad"
+    Start-Process notepad
 }
 
 # Close all instances of the Notepad.
