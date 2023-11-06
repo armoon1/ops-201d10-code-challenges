@@ -28,4 +28,4 @@ Get-Process | Where-Object { $_.ProcessName -eq "notepad" } ForEach-Object { Sto
 # Kill a process by its Process Identification Number. Choose a process whose termination won’t destabilize the system, such as Google Chrome
 
 Get-Process -Name "chrome" | Select-Object -Property Name, Id
-Stop-Process -Id <PID> -Force
+Stop-Process -Id 6564 -Force
