@@ -13,7 +13,7 @@ Get-Process | Sort-Object -Property WorkingSet -Descending
 
 # Start a browser process (such as Google Chrome or MS Edge) and have it open
 
-Start-Process "" 
+Start-Process "C:\Program Files\Google\Chrome\Application" 
 
 # Start the process Notepad ten times using a for loop.
 
