@@ -1,0 +1,1 @@
+﻿ipconfig /all > C:\Users\SEYED\Desktop\network_report.txt
