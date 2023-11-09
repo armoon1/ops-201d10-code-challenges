@@ -29,8 +29,3 @@ nslookup $domain
 output_file="output.txt"
 echo "output file is at $output_file"
 
-if command -v notepad.exe &> /dev/null; then
-  notepad.exe $output_file
-else
-  echo  "Not open in Ubuntu"
-fi
