@@ -6,26 +6,24 @@
 # Purpose:                      whois
 
 #Make a user input string. Presumably the string is a domain name such as Google.com.
-read  -p "Enter domain: " domain
-if [ -z "$domain"]; then
-    echo "Enter a domain name"
-    exit 1
-fi
-echo "Domain: $domain"
+read -p "Enter domain: " 
+
+read "Domain: $domain"
+
+domain_info (){
 
 #Run whois against a user input string.
-whois $domain
+  whois $domain
 
 #Run dig against the user input string.
-dig $domain
+    dig $domain
 
 #Run host against the user input string.
-host $domain
+  host $domain
 
 #Run nslookup against the user input string.
-nslookup $domain
-
+  nslookup $domain
+}
 #Output the results to a single .txt file, open with notepad
-output_file="output.txt"
-echo "output file is at $output_file"
+domain_info > domain_info.txt
 
