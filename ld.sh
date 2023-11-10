@@ -6,13 +6,10 @@
 # Purpose:                      whois
 
 #Make a user input string. Presumably the string is a domain name such as Google.com.
-read -p "Enter domain: " 
-
-read "Domain: $domain"
+read -p "Enter domain: " domain
 
 domain_info (){
-
-#Run whois against a user input string.
+#Run whois against a user input string.  
   whois $domain
 
 #Run dig against the user input string.
