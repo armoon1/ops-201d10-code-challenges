@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script Name:                  Conditionals
+# Script Name:                  Conditional
 # Author:                       SEYED MEHDI HASHEMI SOHI
 # Date of latest revision:      10/29/2023
 # Purpose:                      Loops
