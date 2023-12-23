@@ -1,4 +1,6 @@
-﻿
+﻿# Write a set of Powershell commands that fetch info about running processes, open processes, and close processes.
+# Include language appropriate syntax and file extensions
+
 # Print to the terminal screen all active processes ordered by highest CPU time consumption at the top
 
 Get-Process | Sort-Object -Property CPU -Descending

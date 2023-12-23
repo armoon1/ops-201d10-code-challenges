@@ -1,4 +1,6 @@
-﻿#Enable File and Printer Sharing
+﻿# Write a Powershell script that automates the configuration of a new Windows 10 endpoint.
+
+#Enable File and Printer Sharing
 Enable-NetFirewallRule -Name "Filw and Printer Sahring (SMB-In)"
 Enable-NetFirewallRule -Name "Filw and Printer Sahring (NB-Session-In)"
 
