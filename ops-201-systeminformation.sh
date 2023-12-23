@@ -7,8 +7,8 @@
 # Uses grep to remove irrelevant information from the lshw output
 # Add text to the output clearly indicating which component (such as CPU, RAM, etc.) the script is returning information about
 # Runs as Root; you may execute the shell script with sudo or as Root
-
 #search the output of lshw and return every line
+
 lshw
 #######
 echo "assignment part 2"

@@ -3,7 +3,10 @@
 # Script Name:                  Loops
 # Author:                       SEYED MEHDI HASHEMI SOHI
 # Date of latest revision:      10/29/2023
-# Purpose:                      Running process
+# Purpose:                      
+# Write a script that displays running processes, asks the user for a PID, then kills the process with that PID.
+# Use a loop in your script.
+
 
  while true; do   
  #echo "The condition no longer true."
