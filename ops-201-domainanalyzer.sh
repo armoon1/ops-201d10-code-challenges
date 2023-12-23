@@ -1,10 +1,14 @@
 #!/bin/bash
 
-# Script Name:                  whois
+# Script Name:                  Domain Analyzer
 # Author:                       SEYED MEHDI HASHEMI SOHI
 # Date of latest revision:      11/08/2023
 # Purpose:                      whois
-
+# Create a script that asks a user to type a domain, then displays information about the typed domain. Operations that must be used include:
+# whois
+# dig
+# host
+# nslookup
 #Make a user input string. Presumably the string is a domain name such as Google.com.
 read -p "Enter domain: " domain
 

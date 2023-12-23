@@ -5,9 +5,6 @@
 # Date of latest revision:      10/30/2023
 # Purpose:                      Conditionals
 
-#### STILL WORKING ON IT #######
-#### STILL WORKING ON IT #######
-#### STILL WORKING ON IT #######
 #Create a script that detects if a file or directory exists, then creates it if it does not exist.
 #Your script must use at least one array, one loop, and one conditional.
 #name list in an array

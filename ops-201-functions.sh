@@ -1,9 +1,12 @@
 #!/bin/bash
 
-# Script Name:                  VARIABLES 101
+# Script Name:                  Function
 # Author:                       SEYED MEHDI HASHEMI SOHI
 # Date of latest revision:      10/25/2023
-# Purpose:                      VARIABLES
+# Purpose:                      
+# Write a function that prints the login history of users on this computer, followed by the text “This is the login history”.
+# In your script, call that function three times.
+# Use the same template introduced in Challenge02.
 # Declaration of variables
 Apple_price=5
 files=`ls`
